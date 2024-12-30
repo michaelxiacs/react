@@ -44,10 +44,7 @@ export const Table = () => {
               </th>
             </tr>
           </thead>
-          <tbody
-            key={currentPage} // Ensures re-render for animations
-            className="animate-fadeIn" // Add fade-in effect
-          >
+          <tbody key={currentPage}>
             {employees.slice(startIndex, endIndex).map((employee, index) => (
               <tr key={index} className="h-[5vh] border-b">
                 <td>
